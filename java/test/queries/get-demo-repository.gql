@@ -1,0 +1,9 @@
+query  {
+    git(url: "github.com/jcsirot/dagger-module-springboot-demo/") {
+        branch(name: "main") {
+            tree {
+                id
+            }
+        }
+    }
+}

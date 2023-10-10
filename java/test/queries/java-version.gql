@@ -1,0 +1,7 @@
+query version ($id: ContainerID) {
+    container(id: $id) {
+        withExec(args: ["java", "-version"]) {
+            stderr
+        }
+    }
+}

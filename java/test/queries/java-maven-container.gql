@@ -1,0 +1,11 @@
+query version($jdk: String = "17", $maven: String = "3.9.5") {
+    java {
+        withJdk(version: $jdk) {
+            withMaven(version: $maven) {
+                container {
+                    id
+                }
+            }
+        }
+    }
+}

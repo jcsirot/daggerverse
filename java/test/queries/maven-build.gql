@@ -1,0 +1,13 @@
+query build ($dirID: DirectoryID!) {
+    java {
+        withJdk(version: "17") {
+            withMaven(version: "3.9.5") {
+                withProject(source: $dirID) {
+                    maven(args: ["clean", "verify"]) {
+                        stdout
+                    }
+                }
+            }
+        }
+    }
+}
