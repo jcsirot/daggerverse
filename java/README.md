@@ -1,10 +1,10 @@
 # Daggerverse Java Module
 
-This module setup an OpenJDK dev environment, optionnaly with Maven
+This module sets up an OpenJDK dev environment, optionally with Maven.
 
 ## Usage
 
-You can define a development environment with Java and Maven
+You can define a development environment with Java and Maven:
 
 ```graphql
 query build {
@@ -22,9 +22,9 @@ query build {
 }
 ```
 
-### How to build a Github repository
+### How to build a GitHub repository
 
-Fetch the repository
+Fetch the repository:
 
 ```graphql
 query  {
@@ -38,7 +38,7 @@ query  {
 }
 ```
 
-And run a maven command
+And run a maven command:
 
 ```graphql
 query build ($dirID: DirectoryID!) {
@@ -58,4 +58,4 @@ query build ($dirID: DirectoryID!) {
 
 ## Examples
 
-`test-version.sh` and `test-build.sh` provide some module usgae examples
+`test-version.sh` and `test-build.sh` provide some module usage examples.
