@@ -31,4 +31,19 @@ public class WeatherApi extends Base {
       return "Could not fetch weather data for " + city;
     }
   }
+
+  /** 
+   * Returns the weather forcast in the given city
+   * 
+   * @param city the city name
+  */
+  @Function
+  public String forcast(Secret apiKey, String city) throws InterruptedException, ExecutionException, DaggerQueryException {
+    WeatherFetcher weatherFetcher = new WeatherFetcher(apiKey.plaintext());
+    try {
+      return weatherFetcher.fetchForcast(city);        
+    } catch (IOException e) {
+      return "Could not fetch weather data for " + city;
+    }
+  }
 }
