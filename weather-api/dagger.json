@@ -1,0 +1,5 @@
+{
+  "name": "weather-api",
+  "engineVersion": "v0.15.3-250129184558-25e0fe003102",
+  "sdk": "github.com/lgtdio/dagger/sdk/java@javasdk-modularize"
+}

@@ -1,0 +1,3 @@
+/target/generated-sources/dagger/** linguist-generated
+/target/generated-sources/entrypoint/** linguist-generated
+/target/generated-sources/sdk/** linguist-generated
